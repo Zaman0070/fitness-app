@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:life_style_app/screens/bmi_calculator/field_text.dart';
 import 'package:life_style_app/screens/male/male_bmi/m_bmi_show_value.dart';
 import 'package:life_style_app/screens/male/male_home.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../drawers/m_g_drawer_side.dart';
 
@@ -35,167 +36,165 @@ class _MaleBmiHomeState extends State<MaleBmiHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       endDrawer: DrawerSide(),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 60,
-                width: MediaQuery.of(context).size.width,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      IconButton(onPressed: (){
-                        Navigator.pop(context);
-                      },
-                          icon: Icon(Icons.arrow_back_ios_new,color: Colors.black,)),
-                      Builder(
-                        builder: (context){
-                          return IconButton(onPressed: (){
-                            Scaffold.of(context).openEndDrawer();
-                          },
-                              icon: Image.asset('assets/icons/menu.png',fit: BoxFit.cover,color: Colors.black,)
-                          );
-                        },
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                color: Colors.white,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+        child: ListView(
+          children: [
+            Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 180,
-                      width: 300,
-                      child: Image.asset('assets/bmi.jpg'),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 55,
-                      width: 300,
-                      color: Color(0xffF6A419),
-                      child: const Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          'تحليل الوزن',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Text(
-                        'سيساعدك حساب مؤشر حساب الكتلة على معرفة ما إذا كان وزن جسمك مناسبا لطولك .',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 22,
-                          color: Colors.black,
-                          letterSpacing: -3,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18.0,right: 18),
-                      child: Column(
-                        children: [
-                          kmyText(
-                            mycontroller: ageController,
-                            hintText: 'العمر',
-                            icon: Icons.watch_later_outlined,
-                            onchanged: (valueAge) {
-                              setState(() {
-                                age = valueAge;
-                              });
-                              print(age);
-                            },
-                          ),
-                          kmyText(
-                            mycontroller: hieghtController,
-                            hintText: 'الطول بالسنتمتر',
-                            icon: Icons.thermostat,
-                            onchanged: (valueHeight) {
-                              setState(() {
-                                hieght = valueHeight;
-                              });
-                              print(hieght);
-                            },
-                          ),
-                          kmyText(
-                            mycontroller: weightController,
-                            hintText: 'الوزن بالكيلوغرام',
-                            icon: Icons.monitor_weight_outlined,
-                            onchanged: (valueWeight) {
-                              setState(() {
-                                weight = valueWeight;
-                              });
-                              print(weight);
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 10,),
-
-
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Directionality(
-                        textDirection: TextDirection.rtl,
-                        child: ElevatedButton.icon(
-                          style: ElevatedButton.styleFrom(
-                            primary: Color(0xffF6A419),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(5)),
-                          ),
-                          icon: const Icon(
-                            Icons.arrow_back_ios_new_sharp,
-                            color: Colors.black,
-                            size: 20,
-                          ),
-                          label: const Text(
-                            'تحليل وزني',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 25, color: Colors.black),
-                          ),
-                          onPressed: () {
-                            if (age == '' || hieght == '' || weight == '') {
-                            } else {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (BuildContext context) => MaleBmiShowValue(
-                                        height: hieght,
-                                        weight: weight,
-                                        age: age,
-                                      )));
-                              ageController.clear();
-                              hieghtController.clear();
-                              weightController.clear();
-                            }
-                          },
-                        ),
-                      ),
+                    IconButton(onPressed: (){
+                      Navigator.pop(context);
+                    },
+                        icon: Icon(Icons.arrow_back_ios_new,color: Colors.black,)),
+                    Builder(
+                      builder: (context){
+                        return IconButton(onPressed: (){
+                          Scaffold.of(context).openEndDrawer();
+                        },
+                            icon: Image.asset('assets/icons/menu.png',fit: BoxFit.cover,color: Colors.black,)
+                        );
+                      },
                     )
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+            Container(
+              color: Colors.white,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 20.h,
+                    width: 70.w,
+                    child: Image.asset('assets/bmi.jpg'),
+                  ),
+                  SizedBox(
+                    height: 1.h,
+                  ),
+                  Container(
+                    height: 7.h,
+                    width: 70.w,
+                    color: Color(0xffF6A419),
+                    child:  Padding(
+                      padding:  EdgeInsets.all(10.0),
+                      child: Text(
+                        'تحليل الوزن',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 18.sp,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ),
+                   Padding(
+                    padding:  EdgeInsets.symmetric(horizontal: 35.0),
+                    child: Text(
+                      'سيساعدك حساب مؤشر حساب الكتلة على معرفة ما إذا كان وزن جسمك مناسبا لطولك .',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Colors.black,
+                        letterSpacing: -3,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 18.0,right: 18),
+                    child: Column(
+                      children: [
+                        kmyText(
+                          mycontroller: ageController,
+                          hintText: 'العمر',
+                          icon: Icons.watch_later_outlined,
+                          onchanged: (valueAge) {
+                            setState(() {
+                              age = valueAge;
+                            });
+                            print(age);
+                          },
+                        ),
+                        kmyText(
+                          mycontroller: hieghtController,
+                          hintText: 'الطول بالسنتمتر',
+                          icon: Icons.thermostat,
+                          onchanged: (valueHeight) {
+                            setState(() {
+                              hieght = valueHeight;
+                            });
+                            print(hieght);
+                          },
+                        ),
+                        kmyText(
+                          mycontroller: weightController,
+                          hintText: 'الوزن بالكيلوغرام',
+                          icon: Icons.monitor_weight_outlined,
+                          onchanged: (valueWeight) {
+                            setState(() {
+                              weight = valueWeight;
+                            });
+                            print(weight);
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 1.h,),
+
+
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Directionality(
+                      textDirection: TextDirection.rtl,
+                      child: ElevatedButton.icon(
+                        style: ElevatedButton.styleFrom(
+                          primary: Color(0xffF6A419),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)),
+                        ),
+                        icon: const Icon(
+                          Icons.arrow_back_ios_new_sharp,
+                          color: Colors.black,
+                          size: 20,
+                        ),
+                        label: const Text(
+                          'تحليل وزني',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 25, color: Colors.black),
+                        ),
+                        onPressed: () {
+                          if (age == '' || hieght == '' || weight == '') {
+                          } else {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) => MaleBmiShowValue(
+                                      height: hieght,
+                                      weight: weight,
+                                      age: age,
+                                    )));
+                            ageController.clear();
+                            hieghtController.clear();
+                            weightController.clear();
+                          }
+                        },
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

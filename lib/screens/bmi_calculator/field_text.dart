@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class kmyText extends StatelessWidget {
   String hintText;
@@ -26,7 +27,7 @@ class kmyText extends StatelessWidget {
           textAlign: TextAlign.right,
           decoration: InputDecoration(
             hintText: hintText,
-            hintStyle: const TextStyle(color: Colors.black, fontSize: 20),
+            hintStyle:  TextStyle(color: Colors.black, fontSize: 16.sp),
             prefixIcon: Icon(
               icon,
               color: Colors.black,

@@ -3,6 +3,7 @@ import 'package:life_style_app/screens/bmi_calculator/bmi_home.dart';
 import 'package:life_style_app/screens/bmi_calculator/result.dart';
 import 'package:life_style_app/screens/drawers/f_l_drawer.dart';
 import 'package:life_style_app/screens/drawers/m_g_drawer_side.dart';
+import 'package:sizer/sizer.dart';
 
 import 'custom_text.dart';
 
@@ -24,7 +25,7 @@ class _ShowValuesState extends State<ShowValues> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       endDrawer: FemaleLossDrawer(),
       body: SafeArea(
@@ -57,8 +58,8 @@ class _ShowValuesState extends State<ShowValues> {
               ),
             ),
             Container(
-              height: 180,
-              width: 300,
+              height: 20.h,
+              width: 70.w,
               child: Image.asset('assets/bmi.jpg'),
             ),
             Container(
@@ -72,20 +73,20 @@ class _ShowValuesState extends State<ShowValues> {
                           //     fit: BoxFit.contain,
                           //     width: 400,
                           //     image: AssetImage('assets/bmi.jpg')),
-                          const SizedBox(
-                            height: 10,
+                           SizedBox(
+                            height: 1.h,
                           ),
                           Container(
-                            height: 60,
-                            width: MediaQuery.of(context).size.width/1.2,
+                            height: 6.h,
+                            width: 70.w,
                             color: Color(0xffF6A419),
-                            child: const Padding(
-                              padding: const EdgeInsets.all(10.0),
+                            child:  Padding(
+                              padding:  EdgeInsets.all(10.0),
                               child: Text(
                                 'تحليل الوزن',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 25,
+                                  fontSize: 18.sp,
                                   color: Colors.black,
                                 ),
                               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:life_style_app/screens/bmi_calculator/box.dart';
 import 'package:life_style_app/screens/male/male_main_menu.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../drawers/m_g_drawer_side.dart';
 
@@ -130,8 +131,8 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
               ),
             ),
             Container(
-              height: 180,
-              width: 300,
+              height: 20.h,
+              width: 70.w,
               child: Image.asset('assets/bmi.jpg'),
             ),
             Container(
@@ -146,11 +147,11 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                     //     width: 400,
                     //     image: AssetImage('assests/bm.PNG')),
                     SizedBox(
-                      height: 10,
+                      height: 1.h,
                     ),
                     Container(
-                      height: 60,
-                      width: 300,
+                      height: 6.h,
+                      width: 70.w,
                       color: Color(0xffF6A419),
                       child: const Padding(
                         padding: const EdgeInsets.all(10.0),
@@ -165,8 +166,8 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                       ),
                     ),
                     Container(
-                      height: 155,
-                      width: 410,
+                      height: 20.h,
+                      width: 100.w,
                       color: Colors.white,
                       child: Column(
                         children: [
@@ -271,14 +272,14 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 5.0),
+                      padding:  EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 5.0),
                       child: Text(
                         textR,
                         //  maxLines: 4,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style:  TextStyle(
                           letterSpacing: -1,
-                          fontSize: 19,
+                          fontSize: 15.sp,
                           color: Colors.black,
                         ),
                       ),

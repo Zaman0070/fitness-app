@@ -3,8 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:life_style_app/screens/drawers/f_g_drawer.dart';
-import 'package:life_style_app/screens/drawers/m_g_drawer_side.dart';
-import 'package:life_style_app/screens/female/f_sport.dart';
 import 'package:sizer/sizer.dart';
 
 class FExDay1 extends StatefulWidget {

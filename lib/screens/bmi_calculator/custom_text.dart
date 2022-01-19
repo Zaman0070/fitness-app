@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class CustomText extends StatelessWidget {
   final IconData icon;
@@ -16,9 +17,9 @@ class CustomText extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Container(
-        height: 80,
-        width: 400,
-        margin: const EdgeInsets.all(15.0),
+        height: 8.h,
+        width: 80.w,
+        margin: EdgeInsets.symmetric(vertical: 1.h),
         padding: const EdgeInsets.all(3.0),
         decoration: BoxDecoration(
             border: Border.all(
