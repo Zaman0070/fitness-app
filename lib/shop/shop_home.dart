@@ -6,6 +6,7 @@ import 'package:life_style_app/screens/drawers/m_g_drawer_side.dart';
 import 'package:life_style_app/shop/cart_view.dart';
 import 'package:life_style_app/shop/product_over_view.dart';
 import 'package:life_style_app/shop/review_star.dart';
+import 'package:sizer/sizer.dart';
 import 'package:uuid/uuid.dart';
 import 'package:woocommerce_api/woocommerce_api.dart';
 import 'package:woosignal/models/payload/order_wc.dart';
@@ -204,7 +205,7 @@ class _ShopHomeState extends State<ShopHome> {
           Directionality(
             textDirection: TextDirection.rtl,
             child: Container(
-              height: 435,
+              height: 52.h,
               child: FutureBuilder(
                 future: _getProducts(),
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -253,7 +254,7 @@ class _ShopHomeState extends State<ShopHome> {
                                         overflow: TextOverflow.ellipsis),
                                   ),
                                 ),
-                                subtitle: Text("Buy now for \AED " +
+                                subtitle: Text("Buy now for MAD " +
                                     snapshot.data[index]["price"].toString()),
                                 trailing: InkWell(
                                   onTap: () {

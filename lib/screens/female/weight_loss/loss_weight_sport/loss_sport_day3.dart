@@ -75,7 +75,7 @@ class _LossSportDay3State extends State<LossSportDay3> {
               ),
             ),
             Container(
-              height: 205,
+              height: 22.h,
               child: CircularCountDownTimer(
                 duration: duration,
                 initialDuration: 0,
@@ -147,7 +147,7 @@ class _LossSportDay3State extends State<LossSportDay3> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height/2.1,
+              height:51.5.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -156,13 +156,13 @@ class _LossSportDay3State extends State<LossSportDay3> {
                     child: ClipPath(
                       clipper: WaveClipperOne(reverse: true),
                       child: Container(
-                        height: MediaQuery.of(context).size.width/1.5,
+                        height:27.h,
                         width: MediaQuery.of(context).size.width,
                         color: Color(0xffF4A02C),
                         child: Center(
                             child: Column(
-                              children: const [
-                                SizedBox(height: 60,),
+                              children:  [
+                                SizedBox(height: 8.5.h,),
                                 Text("Correcting posture",
                                   style: TextStyle(
                                       fontSize: 22,

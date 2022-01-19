@@ -2,6 +2,7 @@ import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:life_style_app/screens/drawers/f_l_drawer.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../../drawers/m_g_drawer_side.dart';
 import 'loss_weigt_sport_calender.dart';
@@ -75,7 +76,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
               ),
             ),
             Container(
-              height: 205,
+              height: 22.h,
               child: CircularCountDownTimer(
                 duration: duration,
                 initialDuration: 0,
@@ -147,7 +148,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height/2.1,
+              height: 51.5.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -156,13 +157,13 @@ class _LossSportDay4State extends State<LossSportDay4> {
                     child: ClipPath(
                       clipper: WaveClipperOne(reverse: true),
                       child: Container(
-                        height: MediaQuery.of(context).size.width/1.5,
+                        height: 27.h,
                         width: MediaQuery.of(context).size.width,
                         color: Color(0xffF4A02C),
                         child: Center(
                             child: Column(
-                              children: const [
-                                SizedBox(height: 65,),
+                              children:  [
+                                SizedBox(height: 7.5.h,),
                                 Text("Lunges",
                                   style: TextStyle(
                                       fontSize: 22,

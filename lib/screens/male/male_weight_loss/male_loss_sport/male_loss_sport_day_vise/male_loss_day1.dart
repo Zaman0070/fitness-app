@@ -82,7 +82,7 @@ class _MaleLossSportDay1State extends State<MaleLossSportDay1> {
               ),
             ),
             Container(
-              height: 205,
+              height: 22.h,
               child: CircularCountDownTimer(
                 duration: duration,
                 initialDuration: 0,
@@ -152,7 +152,7 @@ class _MaleLossSportDay1State extends State<MaleLossSportDay1> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 2.1,
+              height: 51.5.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -161,14 +161,14 @@ class _MaleLossSportDay1State extends State<MaleLossSportDay1> {
                     child: ClipPath(
                       clipper: WaveClipperOne(reverse: true),
                       child: Container(
-                        height: MediaQuery.of(context).size.width / 1.5,
+                        height: 27.h,
                         width: MediaQuery.of(context).size.width,
                         color: Color(0xffF4A02C),
                         child: Center(
                             child: Column(
-                          children: const [
+                          children:  [
                             SizedBox(
-                              height: 80,
+                              height: 8.h,
                             ),
                             Text(
                               "Donkey kicks",
@@ -195,7 +195,7 @@ class _MaleLossSportDay1State extends State<MaleLossSportDay1> {
                   ),
                   Positioned(
                       top: 0,
-                      left: 120,
+                      left: 110,
                       child: Image.asset(
                         'assets/male_loss/m1.png',
                         height: 24.h,

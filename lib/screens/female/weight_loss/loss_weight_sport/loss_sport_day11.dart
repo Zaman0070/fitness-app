@@ -82,7 +82,7 @@ class _LossSportDay11State extends State<LossSportDay11> {
               ),
             ),
             Container(
-              height: 205,
+              height: 22.h,
               child: CircularCountDownTimer(
                 duration: duration,
                 initialDuration: 0,
@@ -152,7 +152,7 @@ class _LossSportDay11State extends State<LossSportDay11> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 2.1,
+              height:51.5.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -161,14 +161,14 @@ class _LossSportDay11State extends State<LossSportDay11> {
                     child: ClipPath(
                       clipper: WaveClipperOne(reverse: true),
                       child: Container(
-                        height: MediaQuery.of(context).size.width / 1.5,
+                        height: 27.h,
                         width: MediaQuery.of(context).size.width,
                         color: Color(0xffF4A02C),
                         child: Center(
                             child: Column(
-                          children: const [
+                          children:  [
                             SizedBox(
-                              height: 65,
+                              height: 8.h,
                             ),
                             Text(
                               "Knee Stretches",
@@ -195,7 +195,7 @@ class _LossSportDay11State extends State<LossSportDay11> {
                   ),
                   Positioned(
                       top: 0,
-                      left: 130,
+                      left: 120,
                       child: Image.asset(
                         'assets/loss_sp/loss14.png',
                         height: 23.h,

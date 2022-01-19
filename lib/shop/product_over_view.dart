@@ -215,7 +215,7 @@ class _ProductOverviewState extends State<ProductOverview> {
                           ],
                         ),
                         Text(
-                          '\PSD ${widget.productPrice}',
+                          'MAD ${widget.productPrice}',
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 20,

@@ -82,7 +82,7 @@ class _MaleLossDay10State extends State<MaleLossDay10> {
               ),
             ),
             Container(
-              height: 205,
+              height: 22.h,
               child: CircularCountDownTimer(
                 duration: duration,
                 initialDuration: 0,
@@ -152,7 +152,7 @@ class _MaleLossDay10State extends State<MaleLossDay10> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 2.1,
+              height: 51.5.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -161,14 +161,14 @@ class _MaleLossDay10State extends State<MaleLossDay10> {
                     child: ClipPath(
                       clipper: WaveClipperOne(reverse: true),
                       child: Container(
-                        height: MediaQuery.of(context).size.width / 1.5,
+                        height:27.h,
                         width: MediaQuery.of(context).size.width,
                         color: Color(0xffF4A02C),
                         child: Center(
                             child: Column(
-                          children: const [
+                          children:  [
                             SizedBox(
-                              height: 75,
+                              height: 8.h,
                             ),
                             Text(
                               "Knee Stretches",
@@ -195,7 +195,7 @@ class _MaleLossDay10State extends State<MaleLossDay10> {
                   ),
                   Positioned(
                       top: 0,
-                      left: 135,
+                      left: 115,
                       child: Image.asset(
                         'assets/male_loss/m10.png',
                         height: 23.h,
