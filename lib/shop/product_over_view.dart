@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:life_style_app/screens/drawers/m_g_drawer_side.dart';
 import 'package:life_style_app/shop/shop_home.dart';
 import 'package:http/http.dart' as http;
@@ -30,21 +31,36 @@ class ProductOverview extends StatefulWidget {
 }
 
 class _ProductOverviewState extends State<ProductOverview> {
+
+  bool checking = false;
   var cartKey = Uuid().v4().toString().substring(0, 7);
 
   addToCart(int id) async {
     var basrUrl = "https://nutriana.surnaturel.ma/";
     var client = http.Client();
-
     Map<String, String> header = {'content-type': 'application/json'};
     var response = await client.post(
         Uri.parse(basrUrl +
             "wp-json/cocart/v2/cart/add-item?id=$id&cart_key=$cartKey"),
         headers: header);
     if (response.statusCode == 200) {
+      setState(() {
+        checking = true;
+      });
       print('added to cart');
+      Fluttertoast.showToast(
+          msg: "Product added Successfully",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 2);
     } else {
+      checking = false;
       print('cart not order');
+      Fluttertoast.showToast(
+          msg: "Something Went Wrong Try Again",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 3);
     }
   }
 
@@ -198,27 +214,25 @@ class _ProductOverviewState extends State<ProductOverview> {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
-                          children: [
-                            Radio(
-                              value: SignInCharacter.fill,
-                              groupValue: _character,
-                              activeColor: Colors.green[700],
-                              onChanged: (value) {
-                                setState(() {
-                                  // _character = value;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
                         Text(
                           'MAD ${widget.productPrice}',
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 20,
+                            color: Color(0xffFDB640),
+                          ),
+                        ),
+                        SizedBox(width: 8,),
+                        Icon(CupertinoIcons.circle_fill,color: Colors.grey,size: 12,),
+                        SizedBox(width: 8,),
+                        Text(
+                          '1 Kg',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 20,
+                            color: Color(0xffFDB640),
                           ),
                         ),
                       ],
@@ -251,31 +265,37 @@ class _ProductOverviewState extends State<ProductOverview> {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                   ),
-                  // InkWell(
-                  //   onTap: () {
-                  //     addToCart(widget.id);
-                  //     Navigator.push(
-                  //         context,
-                  //         MaterialPageRoute(
-                  //             builder: (context) =>
-                  //                 CartView(cartKey: cartKey)));
-                  //   },
-                  //   child: Container(
-                  //       height: 50,
-                  //       width: 170,
-                  //       color: Color(0xffFDB640),
-                  //       child: Center(
-                  //           child: Directionality(
-                  //         textDirection: TextDirection.rtl,
-                  //         child: Text(
-                  //           '> أريد واحد',
-                  //           style: TextStyle(
-                  //               fontWeight: FontWeight.w500,
-                  //               fontSize: 34,
-                  //               letterSpacing: 3),
-                  //         ),
-                  //       ))),
-                  // ),
+                  InkWell(
+                    onTap: (){
+                      setState(() {
+                        addToCart(widget.id);
+                      });
+                      setState(() {
+                        Future.delayed(Duration(seconds: 3), () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      CartView(cartKey: cartKey, checking: checking)));
+                        });
+                      });
+                    },
+                    child: Container(
+                        height: 50,
+                        width: 170,
+                        color: Color(0xffFDB640),
+                        child: Center(
+                            child: Directionality(
+                          textDirection: TextDirection.rtl,
+                          child: Text(
+                            '> أريد واحد',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 34,
+                                letterSpacing: 3),
+                          ),
+                        ))),
+                  ),
                 ],
               ),
             ),

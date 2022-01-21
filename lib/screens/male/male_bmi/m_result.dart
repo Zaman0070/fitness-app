@@ -166,7 +166,7 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                       ),
                     ),
                     Container(
-                      height: 20.h,
+                      height: 21.h,
                       width: 100.w,
                       color: Colors.white,
                       child: Column(
@@ -271,6 +271,7 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                         ],
                       ),
                     ),
+                    SizedBox(height: 1.h,),
                     Padding(
                       padding:  EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 5.0),
                       child: Text(

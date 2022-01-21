@@ -168,9 +168,8 @@ class _ResulstState extends State<Resulst> {
                       ),
                     ),
                     Container(
-                      height: 20.h,
+                      height: 21.h,
                       width: 100.w,
-                      color: Colors.white,
                       child: Column(
                         children: [
                           Row(
@@ -273,6 +272,7 @@ class _ResulstState extends State<Resulst> {
                         ],
                       ),
                     ),
+                    SizedBox(height: 1.h,),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 5.0),
                       child: Text(
