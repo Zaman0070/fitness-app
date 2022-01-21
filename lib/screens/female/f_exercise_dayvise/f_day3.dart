@@ -153,7 +153,7 @@ class _FExDay3State extends State<FExDay3> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -174,7 +174,7 @@ class _FExDay3State extends State<FExDay3> {
                             Text(
                               "LUNGE",
                               style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
+                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             Directionality(
                               textDirection: TextDirection.rtl,
@@ -183,7 +183,7 @@ class _FExDay3State extends State<FExDay3> {
                                 child: Text(
                                   "تمرين الاندفاع أثناء المشي هو تمرين ممتاز لبناء",
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16.sp,
                                       fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center,
                                 ),
@@ -199,7 +199,7 @@ class _FExDay3State extends State<FExDay3> {
                       left: 100,
                       child: Image.asset(
                         'assets/fgain2.png',
-                        height: 25.h,
+                        height: 23.h,
                       )),
                 ],
               ),

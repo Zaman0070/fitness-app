@@ -149,7 +149,7 @@ class _FExDay2State extends State<FExDay2> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -167,7 +167,7 @@ class _FExDay2State extends State<FExDay2> {
                                 SizedBox(height: 8.5.h,),
                                 Text("PUSH UP",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 18.sp,
                                       fontWeight: FontWeight.bold
                                   ),),
                                 Directionality(
@@ -176,7 +176,7 @@ class _FExDay2State extends State<FExDay2> {
                                     padding: EdgeInsets.only(left: 20.0,right: 20),
                                     child: Text("مرين الضغط هو تمرين رياضي شائع يبدأ من وضعية الانبطاح.",
                                       style: TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 16.sp,
                                           fontWeight: FontWeight.bold,
                                         letterSpacing: -1
                                       ),
@@ -192,7 +192,7 @@ class _FExDay2State extends State<FExDay2> {
                   Positioned(
                       top: 0,
                       left: 115,
-                      child: Image.asset('assets/fgain1.png',height: 26.h,)),
+                      child: Image.asset('assets/fgain1.png',height: 24.h,)),
                 ],
               ),
             ),

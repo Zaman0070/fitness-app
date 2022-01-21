@@ -24,8 +24,8 @@ class _LossSportDay7State extends State<LossSportDay7> {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 50,
-        width: 50,
+        height: 6.h,
+        width: 6.h,
         decoration: BoxDecoration(
           color: Color(0xffF4A02C),
           borderRadius: BorderRadius.circular(30),
@@ -114,8 +114,8 @@ class _LossSportDay7State extends State<LossSportDay7> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 6.h,
+                    width: 6.h,
                     decoration: BoxDecoration(
                       color: Color(0xffF7B044),
                       borderRadius: BorderRadius.circular(30),
@@ -152,7 +152,7 @@ class _LossSportDay7State extends State<LossSportDay7> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -173,7 +173,7 @@ class _LossSportDay7State extends State<LossSportDay7> {
                             Text(
                               "Jumping Squats",
                               style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
+                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             Directionality(
                               textDirection: TextDirection.rtl,
@@ -182,7 +182,7 @@ class _LossSportDay7State extends State<LossSportDay7> {
                                 child: Text(
                                   "قم بالقرفصاء حتى تصبح فخذيك أعلى قليلاً من ركبتيك ، قم بالقيادة ",
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16.sp,
                                       fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center,
                                 ),
@@ -198,7 +198,7 @@ class _LossSportDay7State extends State<LossSportDay7> {
                       left: 115,
                       child: Image.asset(
                         'assets/loss_sp/loss9.png',
-                        height: 24.h,
+                        height: 22.h,
                       )),
                 ],
               ),

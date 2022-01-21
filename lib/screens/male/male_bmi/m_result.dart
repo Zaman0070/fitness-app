@@ -32,7 +32,7 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
     if (val <= 18.5) {
       setState(() {
         underweight = true;
-        buttonText = 'تحت الوزن';
+        buttonText = 'نقص الوزن';
         textR =
         'أنت تعاني من نقص الوزن. ننصحك باتباع نظام غذائي وممارسة الرياضة. يمكنك اتباع نصيحتنا بشأن هذا في تطبيقنا في قسم زيادة الوزن. يرجى استشارة أخصائي التغذية قبل البدء في أي نظام غذائي أو برنامج تمارين.';
       });
@@ -150,16 +150,16 @@ class _MaleBmiResultState extends State<MaleBmiResult> {
                       height: 1.h,
                     ),
                     Container(
-                      height: 6.h,
+                      height: 6.5.h,
                       width: 70.w,
                       color: Color(0xffF6A419),
-                      child: const Padding(
-                        padding: const EdgeInsets.all(10.0),
+                      child:  Padding(
+                        padding:  EdgeInsets.all(10.0),
                         child: Text(
                           'نتائج تحليل الوزن',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 16.sp,
                               color: Colors.black,
                               fontWeight: FontWeight.bold),
                         ),

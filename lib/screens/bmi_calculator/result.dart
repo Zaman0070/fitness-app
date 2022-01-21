@@ -51,7 +51,7 @@ class _ResulstState extends State<Resulst> {
       return normal;
     } else if (val > 25 && val <= 30) {
       setState(() {
-        buttonText = 'تحت الوزن';
+        buttonText = 'نقص الوزن';
         overWeight = true;
         textR =
         'كنت بدينة. ننصحك باتباع نظام غذائي وممارسة الرياضة. يمكنك اتباع نصيحتنا بشأن هذا في تطبيقنا في قسم إنقاص الوزن. يرجى استشارة أخصائي التغذية قبل البدء في أي نظام غذائي أو برنامج تمارين.';
@@ -60,7 +60,7 @@ class _ResulstState extends State<Resulst> {
       return overWeight;
     } else if (val > 30 && val <= 35) {
       setState(() {
-        buttonText = 'تحت الوزن';
+        buttonText = 'نقص الوزن';
         severlyOverweight = true;
         textR =
         'كنت تعاني من السمنة المفرطة. ننصحك باتباع نظام غذائي وممارسة الرياضة. يمكنك اتباع نصيحتنا بشأن هذا في تطبيقنا في قسم إنقاص الوزن. يرجى استشارة أخصائي التغذية قبل البدء في أي نظام غذائي أو برنامج تمارين.';
@@ -69,7 +69,7 @@ class _ResulstState extends State<Resulst> {
       return severlyOverweight;
     } else {
       setState(() {
-        buttonText = 'تحت الوزن';
+        buttonText = 'نقص الوزن';
         verySeverlyOverweight = true;
         textR =
         'كنت تعاني من سمنة مفرطة. ننصحك باتباع نظام غذائي وممارسة الرياضة. يمكنك اتباع نصيحتنا بشأن هذا في تطبيقنا في قسم إنقاص الوزن. يرجى استشارة أخصائي التغذية قبل البدء في أي نظام غذائي أو برنامج تمارين.';
@@ -152,7 +152,7 @@ class _ResulstState extends State<Resulst> {
                       height: 1.h,
                     ),
                     Container(
-                      height: 6.h,
+                      height: 6.5.h,
                       width: 70.w,
                       color: Color(0xffF6A419),
                       child:  Padding(
@@ -161,7 +161,7 @@ class _ResulstState extends State<Resulst> {
                           'نتائج تحليل الوزن',
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontSize: 18.sp,
+                              fontSize: 16.sp,
                               color: Colors.black,
                               fontWeight: FontWeight.bold),
                         ),

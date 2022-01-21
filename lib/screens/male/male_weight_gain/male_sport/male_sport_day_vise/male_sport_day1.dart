@@ -23,8 +23,8 @@ class _MaleGainSportDay1State extends State<MaleGainSportDay1> {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 50,
-        width: 50,
+        height: 6.h,
+        width: 6.h,
         decoration: BoxDecoration(
           color: Color(0xffF4A02C),
           borderRadius: BorderRadius.circular(30),
@@ -113,8 +113,8 @@ class _MaleGainSportDay1State extends State<MaleGainSportDay1> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 6.h,
+                    width: 6.h,
                     decoration: BoxDecoration(
                       color: Color(0xffF7B044),
                       borderRadius: BorderRadius.circular(30),
@@ -151,7 +151,7 @@ class _MaleGainSportDay1State extends State<MaleGainSportDay1> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -172,7 +172,7 @@ class _MaleGainSportDay1State extends State<MaleGainSportDay1> {
                             Text(
                               "SQUAT",
                               style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
+                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             Directionality(
                               textDirection: TextDirection.rtl,
@@ -181,7 +181,7 @@ class _MaleGainSportDay1State extends State<MaleGainSportDay1> {
                                 child: Text(
                                   "من التمارين المعروفة والممارسة بكثرة من قبل النساء وذلك لأنها تقوم بتحفيز عضلات الأرداف  ",
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16.sp,
                                       fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center,
                                 ),

@@ -91,7 +91,7 @@ class _MaleBmiHomeState extends State<MaleBmiHome> {
                         'تحليل الوزن',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 18.sp,
+                          fontSize: 17.sp,
                           color: Colors.black,
                         ),
                       ),

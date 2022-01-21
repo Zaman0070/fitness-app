@@ -23,8 +23,8 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 50,
-        width: 50,
+        height: 6.h,
+        width: 6.h,
         decoration: BoxDecoration(
           color:  Color(0xffF4A02C),
           borderRadius: BorderRadius.circular(30),
@@ -107,8 +107,8 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 6.h,
+                    width: 6.h,
                     decoration: BoxDecoration(
                       color: Color(0xffF7B044),
                       borderRadius: BorderRadius.circular(30),
@@ -146,7 +146,7 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -164,7 +164,7 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
                                 SizedBox(height: 8.h,),
                                 Text("PUSH UP",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 18.sp,
                                       fontWeight: FontWeight.bold
                                   ),),
                                 Directionality(
@@ -173,7 +173,7 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
                                     padding: EdgeInsets.only(left: 20.0,right: 20),
                                     child: Text("مرين الضغط هو تمرين رياضي شائع يبدأ من وضعية الانبطاح.  ",
                                       style: TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 16.sp,
                                           fontWeight: FontWeight.bold,
                                           letterSpacing: -1
                                       ),
@@ -189,7 +189,7 @@ class _MaleGainSportDay2State extends State<MaleGainSportDay2> {
                   Positioned(
                       top: 0,
                       left: 100,
-                      child: Image.asset('assets/male/mgain1.png',height: 25.h,)),
+                      child: Image.asset('assets/male/mgain1.png',height: 23.h,)),
                 ],
               ),
             ),

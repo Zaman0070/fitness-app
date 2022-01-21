@@ -74,7 +74,7 @@ class _MaleBmiShowValueState extends State<MaleBmiShowValue> {
                             height: 1.h,
                           ),
                           Container(
-                            height: 6.h,
+                            height: 6.5.h,
                             width: 70.w,
                             color: Color(0xffF6A419),
                             child:  Padding(
@@ -83,8 +83,9 @@ class _MaleBmiShowValueState extends State<MaleBmiShowValue> {
                                 'تحليل الوزن',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 18.sp,
+                                  fontSize: 16.sp,
                                   color: Colors.black,
+                                  fontWeight: FontWeight.bold
                                 ),
                               ),
                             ),

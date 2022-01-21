@@ -24,8 +24,8 @@ class _LossSportDay4State extends State<LossSportDay4> {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 50,
-        width: 50,
+        height: 6.h,
+        width: 6.h,
         decoration: BoxDecoration(
           color:  Color(0xffF4A02C),
           borderRadius: BorderRadius.circular(30),
@@ -109,8 +109,8 @@ class _LossSportDay4State extends State<LossSportDay4> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 6.h,
+                    width: 6.h,
                     decoration: BoxDecoration(
                       color: Color(0xffF7B044),
                       borderRadius: BorderRadius.circular(30),
@@ -148,7 +148,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -166,7 +166,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
                                 SizedBox(height: 7.5.h,),
                                 Text("Lunges",
                                   style: TextStyle(
-                                      fontSize: 22,
+                                      fontSize: 18.sp,
                                       fontWeight: FontWeight.bold
                                   ),),
                                 Directionality(
@@ -175,7 +175,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
                                     padding: EdgeInsets.only(left: 20.0,right: 20),
                                     child: Text("تفعل الطعنات ذلك تمامًا ، مما يعزز الحركة الوظيفية ، مع زيادة القوة في ساقيك وعضلات الأرداف.",
                                       style: TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 16.sp,
                                           fontWeight: FontWeight.bold
                                       ),
                                       textAlign:TextAlign.center ,
@@ -190,7 +190,7 @@ class _LossSportDay4State extends State<LossSportDay4> {
                   Positioned(
                       top: 0,
                       left: 90,
-                      child: Image.asset('assets/loss_sp/loss5.png',height: 240,)),
+                      child: Image.asset('assets/loss_sp/loss5.png',height: 22.h,)),
                 ],
               ),
             ),

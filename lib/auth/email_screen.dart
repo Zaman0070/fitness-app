@@ -54,7 +54,7 @@ class _EmailScreenState extends State<EmailScreen> {
         elevation: 0,
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
-        title: Text('Logon',
+        title: Text('Login',
         style: TextStyle(color: Colors.black),
         ),
 

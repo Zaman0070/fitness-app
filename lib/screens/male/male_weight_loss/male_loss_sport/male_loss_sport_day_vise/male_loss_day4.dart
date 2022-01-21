@@ -24,8 +24,8 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 50,
-        width: 50,
+        height: 6.h,
+        width: 6.h,
         decoration: BoxDecoration(
           color: Color(0xffF4A02C),
           borderRadius: BorderRadius.circular(30),
@@ -114,8 +114,8 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: 6.h,
+                    width: 6.h,
                     decoration: BoxDecoration(
                       color: Color(0xffF7B044),
                       borderRadius: BorderRadius.circular(30),
@@ -152,7 +152,7 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -173,7 +173,7 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
                             Text(
                               "Lunges",
                               style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
+                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             Directionality(
                               textDirection: TextDirection.rtl,
@@ -182,7 +182,7 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
                                 child: Text(
                                   "تفعل الطعنات ذلك تمامًا ، مما يعزز الحركة الوظيفية ",
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16.sp,
                                       fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center,
                                 ),
@@ -198,7 +198,7 @@ class _MaleLossDay4State extends State<MaleLossDay4> {
                       left: 100,
                       child: Image.asset(
                         'assets/male_loss/m4.png',
-                        height: 27.h,
+                        height: 23.h,
                       )),
                 ],
               ),

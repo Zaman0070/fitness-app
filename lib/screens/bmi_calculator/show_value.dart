@@ -77,7 +77,7 @@ class _ShowValuesState extends State<ShowValues> {
                             height: 1.h,
                           ),
                           Container(
-                            height: 6.h,
+                            height: 6.5.h,
                             width: 70.w,
                             color: Color(0xffF6A419),
                             child:  Padding(
@@ -86,8 +86,9 @@ class _ShowValuesState extends State<ShowValues> {
                                 'تحليل الوزن',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  fontSize: 18.sp,
+                                  fontSize: 16.sp,
                                   color: Colors.black,
+                                    fontWeight: FontWeight.bold
                                 ),
                               ),
                             ),

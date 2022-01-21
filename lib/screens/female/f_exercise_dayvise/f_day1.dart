@@ -150,7 +150,7 @@ class _FExDay1State extends State<FExDay1> {
               ),
             ),
             Container(
-              height: 51.5.h,
+              height: 51.2.h,
               width: MediaQuery.of(context).size.width,
               child: Stack(
                 children: [
@@ -171,7 +171,7 @@ class _FExDay1State extends State<FExDay1> {
                             Text(
                               "SQUAT",
                               style: TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold),
+                                  fontSize: 18.sp, fontWeight: FontWeight.bold),
                             ),
                             Directionality(
                               textDirection: TextDirection.rtl,
@@ -180,7 +180,7 @@ class _FExDay1State extends State<FExDay1> {
                                 child: Text(
                                   "من التمارين المعروفة والممارسة بكثرة من قبل النساء",
                                   style: TextStyle(
-                                      fontSize: 18,
+                                      fontSize: 16.sp,
                                       fontWeight: FontWeight.bold),
                                   textAlign: TextAlign.center,
                                 ),
@@ -196,7 +196,7 @@ class _FExDay1State extends State<FExDay1> {
                       left: 135,
                       child: Image.asset(
                         'assets/fgain.png',
-                        height: 23.h,
+                        height: 22.h,
                       )),
                 ],
               ),

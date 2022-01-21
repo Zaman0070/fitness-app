@@ -1,4 +1,4 @@
-package com.example.life_style_app;
+package com.nutriana;
 
 import io.flutter.embedding.android.FlutterActivity;
 

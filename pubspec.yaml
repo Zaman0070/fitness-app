@@ -62,6 +62,7 @@ dependencies:
   flutter_secure_storage: ^5.0.2
   woosignal: ^3.0.3
   uuid: ^3.0.5
+  change_app_package_name: ^1.0.0
   
   
 

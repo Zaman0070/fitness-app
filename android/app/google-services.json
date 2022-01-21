@@ -1,42 +1,49 @@
 {
   "project_info": {
-    "project_number": "652996326782",
-    "project_id": "life-style-app-f4642",
-    "storage_bucket": "life-style-app-f4642.appspot.com"
+    "project_number": "41463404519",
+    "project_id": "nutriana-lifestyle-c83cf",
+    "storage_bucket": "nutriana-lifestyle-c83cf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:652996326782:android:f1c87f702359b041e52f2f",
+        "mobilesdk_app_id": "1:41463404519:android:38d9d14e429916d61b4f42",
         "android_client_info": {
-          "package_name": "com.example.life_style_app"
+          "package_name": "com.nutriana"
         }
       },
       "oauth_client": [
         {
-          "client_id": "652996326782-cve14m9f7iuh5fnknevpqgdv2tt81ul3.apps.googleusercontent.com",
+          "client_id": "41463404519-uane1taq1o8q90eql25cta4eob9p9i9a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.life_style_app",
+            "package_name": "com.nutriana",
             "certificate_hash": "658f1f8eaa4e69ee726749e7b60ba2f2ba6c9280"
           }
         },
         {
-          "client_id": "652996326782-s3scotc6hq24ou12ftrrruea03ep9vo0.apps.googleusercontent.com",
+          "client_id": "41463404519-1qh73p2u8u9r8lmhu2alr7i6rephd8qg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBynqKGKKcI2Bia5jMTVX0jsZ10fx49XTM"
+          "current_key": "AIzaSyC5NrkTCASCXQyrGAv2wO7SN94eldejQ28"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "652996326782-s3scotc6hq24ou12ftrrruea03ep9vo0.apps.googleusercontent.com",
+              "client_id": "41463404519-1qh73p2u8u9r8lmhu2alr7i6rephd8qg.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "41463404519-2j3vvmc54kgcg8h8tcpd150c350cksib.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "lifestyleapp"
+              }
             }
           ]
         }
